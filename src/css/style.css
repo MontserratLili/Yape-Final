@@ -1,12 +1,30 @@
+/*PRIMERA SECCIÓN *** INICIO*/
 .carousel__panel{
     width: 100%;
-    height: 700px;
+    height: 625px;
     overflow: visible;
-}
-.carousel{
-    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:1em;
+    
 }
 .imagenesCarousel{
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
+}
+.botones{
+    margin-top: 30em;
+}
+.btn{
+    width: 300px;
+    margin-top:5em;
+}
+
+/*SEGUNDA SECCIÓN *** REGISTRO*/
+.imagenRegistro{
+    width: 150px;
+    margin-top:5em;
+}
+.letraverde{
+    color:#00c3a3;
 }
