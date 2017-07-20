@@ -1,37 +1,38 @@
 //Inicializando Carousel de sección inicio
-$('.carousel.carousel-slider').carousel({fullWidth: true});
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true
+});
 
 //Funcionalidad botón sección inicio
 var botonInicio = document.getElementById("botonIncio");
-var sprimera= document.getElementById("sprimera");
+var sprimera = document.getElementById("sprimera");
 
-function ocultarSeccion(){
+function ocultarSeccion() {
     sprimera.style.display = "none";
 };
 
-botonInicio.addEventListener("click", ocultarSeccion);
-
 //Validación de longitud de teléfono y chekbox activado
-
-var maximo = 10;
 var validar = document.getElementById("boton");
-var c1 = document.getElementById("filled-in-box").checked;
 
-function contar (){
+function contar() {
     var numero = document.getElementById("casillaNumero").value;
     console.log(numero);
     var contado = numero.length;
     console.log(contado);
-    
-    if(contado==maximo && c1==true){
+    var maximo = 10;
+    var casilla = document.getElementById("filled-in-box");
+
+    if (contado == maximo && casilla.is(":checked") == true) {
         console.log("ok");
-        removeAttribute("disabled");
-    }
+        validar.removeAttribute("disabled");
+    } else if (casilla.is(":checked") == false && contado > maximo);
+    validar.attr("disabled", true);
 };
 
-
+//Escuchadores de eventos asignados a los elementos HTML
+botonInicio.addEventListener("click", ocultarSeccion);
 validar.addEventListener("click", contar);
-//validar.addEventListener("click", validando);
+
 /*if(contado<=maximo){
         alert("ok");
     }else{
@@ -43,6 +44,4 @@ validar.addEventListener("click", contar);
         alert("no bien")
     }*/
 
-
-
-
+//Validación de teléfono

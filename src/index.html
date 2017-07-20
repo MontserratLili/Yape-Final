@@ -46,24 +46,81 @@
         </div>
     </section>
 
+    <!--SEGUNDA SECCIÓN *** REGISTRO-->
     <form id="ssegunda" name="formulario" class="row center container">
-        <div class="col-s6">
+        <div class="col s6 offset-s3">
             <img class="responsive-img imagenRegistro" src="assets/img/phone.png" alt="">
         </div>
-        <h5>Para comenzar validemos tu número</h5>
-        <p>Recibirás un SMS con un código de validación</p>
+        <h5 class="col s6 offset-s3">Para comenzar validemos tu número</h5>
+        <p class="center col s6 offset-s3">Recibirás un SMS con un código de validación</p>
         <div class="row center container">
-            <h6 class="col s4"><i class="material-icons tiny">phonelink_ring</i>(+51)</h6>
-            <input id="casillaNumero" name="phone" type="number" class="col s8">
+            <h6 class="col s3 offset-s2 center"><i class="material-icons tiny">phonelink_ring</i>(+51)</h6>
+            <input id="casillaNumero" name="phone" type="number" class="col s6 center">
         </div>
-        <p class="row left container">
-            <input type="checkbox" class="filled-in" id="filled-in-box"/>
-            <label for="filled-in-box">Acepto los <span class="letraverde">términos y condiciones</span></label>
-        </p>
-        <div class="row">
-            <a id="boton" type="submit" class="btn  col s4 offset-s4 white-text" disabled="disabled">CONTINUAR</a>
+        <div class="row center container">
+            <p class="col s10 offset-s2">
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Acepto los <span class="letraverde">términos y condiciones</span></label>
+            </p>
+        </div>
+        <div class="row container">
+            <a id="boton" type="submit" class="btn  col s5 offset-s5 white-text orange">CONTINUAR</a>
         </div>
     </form>
+
+    <!--TERCERA SECCIÓN *** VALIDACIÓN DE DATOS-->
+    <section class="container secciones">
+        <div class="row center">
+            <div>
+                <img class="responsive-img imagenRegistro" src="assets/img/message.png" alt="">
+            </div>
+            <h5>Ahora ingresa tú código</h5>
+            <p>Envíamos un SMS con el código de validación <br>al número
+                <b>#876876</b>
+            </p>
+        </div>
+        <div class="row center">
+            <i class="material-icons tiny col s2 offset-s1 center">lock_outline</i>
+            <input id="casillaNumero" name="phone" type="number" class="col s6 center" placeholder="-  -  -  -  -">
+            <label class="col s6 offset-s2"><i class="material-icons tiny col s2 offset-s1 center">restore</i>Reintentar en 21</label>
+        </div>
+    </section>
+
+    <!--CUARTA SECCIÓN *** CREAR USUARIO-->
+    <section class="container secciones">
+        <div class="row center">
+            <div>
+                <img class="responsive-img imagenRegistro" src="assets/img/lockone.png" alt="">
+            </div>
+            <h5>Crea tu usuario Yape</h5>
+            <p>Ingresa un nombre, email y clave de usuario.</p>
+        </div>
+        <div class="row center">
+            <i class="material-icons tiny col s2 offset-s1 center">lock_outline</i>
+            <input id="casillaNumero" name="phone" type="text" class="col s6 center" placeholder="Nombre">
+        </div>
+        <div class="row center">
+            <i class="material-icons tiny col s2 offset-s1 center">lock_outline</i>
+            <input id="casillaNumero" name="phone" type="email" class="col s6 center" placeholder="correo@ejemplo.com">
+        </div>
+        <div class="row center">
+            <i class="material-icons tiny col s2 offset-s1 center">lock_outline</i>
+            <input id="casillaNumero" name="phone" type="text" class="col s6 center" placeholder="Ingresa clave de 6 dígitos">
+            <label class="col s7 offset-s2">Cuida esta clave como oro, es tu acceso a Yape</label>
+        </div>
+        <div class="row center">
+            <a class="btn white-text orange col s6 offset-s3">CREAR CUENTA</a>
+        </div>
+    </section>
+
+    <!--QUINTA SECCIÓN *** REGISTRO EXITOSO-->
+    <section class="pantallaOk">
+        <div class="center">
+            <img class="responsive-img imagenRegistro" src="assets/img/check.png" alt="">
+            <h5>¡Bien!</h5>
+            <h5>Ahora puedes usar Yape</h5>
+        </div>
+    </section>
 
     <!--Importando jQuery para materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
